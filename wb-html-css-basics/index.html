@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" rel="stylesheet">
+    <title>Order a Smoothiegram!</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Order a Smoothiegram</h1>
+      <h3>There's no better way to show a loved one you care than with a
+      Smoothiegram!</h3>
+      <p>Each Smoothiegram comes with a custom message printed on high-quality cardstock
+      and your choice of a premium, hand-crafted smoothie.</p>
+    </header>
+
+    <main>
+      <section>
+        <div id="menu">
+          <h2>Smoothie Options</h2>
+          <p>Choose from one of these smoothies.</p>
+          <table border="0px solid #ffffffff" class="styled-table">
+            <tr>
+              <th>Flavor</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>Super Strawberries Delicious</td>
+              <td>$1,200.00</td>
+            </tr>
+            <tr>
+              <td>White Grape Ranger</td>
+              <td>$400.00</td>
+            </tr>
+            <tr>
+              <td>Blueberry Blast</td>
+              <td>$1,750.00</td>
+            </tr>
+            
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <form id="order_form">
+          <h2>Order Form</h2>
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="name" class="block bottom_space">
+          <label for="recipient">Who are we sending this to?</label>
+          <input type="text" name="recipient" id="recipient" class="block bottom_space">
+          <label for="smoothie">Choose a smoothie</label>
+          <select name="smoothie" id="smoothie" value class="block bottom_space">
+            <option value="">Please choose an option</option>
+            <option value="strawberry">Super Strawberries Delicious</option>
+            <option value="grape">White Grape Ranger</option>
+            <option value="blueberry">Blueberry Blast</option>
+          </select>
+          
+          <div id="delivery" class="bottom_space">
+            <p id="inline">When should we deliver? </p>
+            <input type="radio" name="delivery_time" id="asap" value="asap">
+            <label for="asap">As soon as possible</label>
+            <input type="radio" name="delivery_time" id="morning" value="morning">
+            <label for="morning">Morning</label>
+            <input type="radio" name="delivery_time" id="afternoon" value="afternoon">
+            <label for="afternoon">Afternoon</label>
+          </div>
+
+          <label for="message">Enter your message</label>
+          <textarea name="message" id="message" cols="65`" rows="10" class="block bottom_space"></textarea>
+          <label for="subscribe">Subscribe to our newsletter?</label>
+          <input type="checkbox" name="subscribe" id="subscribe" class="bottom_space">
+          <button type="button" class="block">Submit</button>
+          
+          
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
