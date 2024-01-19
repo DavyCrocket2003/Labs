@@ -21,13 +21,13 @@ header, section {
     padding: 20px;
 }
 
-.styled-table{
-    /* width: 100%; */
-    /* border-collapse: collapse; */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .styled-table th, .styled-table td {
-    border: 1px solid #000FF;
+    border: 0px;
     padding: 0px;
     text-align: left;
 }
